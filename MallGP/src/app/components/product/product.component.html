@@ -1,0 +1,51 @@
+<mat-sidenav-container> 
+    <app-navbar> </app-navbar>
+<div class="content mat-elevation-z8">
+<h1 class="TittleTienda">Larcomar - SKECHERS</h1>
+<div class="OpcionElegida"> 
+  <mat-icon class="color-mat-icon">store</mat-icon>
+  <span>Productos</span>
+</div>
+
+<mat-form-field appearance="fill">
+    <mat-label>Genero</mat-label>
+    <mat-select [(ngModel)]="selectedGenero" name="Genero" (ngModelChange)="filtrarGenero()">
+      <mat-option value="Hombre">
+        Hombre
+      </mat-option>
+      <mat-option value="Mujer">
+        Mujer
+      </mat-option>
+      <mat-option value="Unisex">
+        Unisex
+      </mat-option>
+      <mat-option value="todos">
+        Todos
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-grid-list cols="3">
+    <mat-grid-tile *ngFor="let producto of newProductView" class="grid-card" routerLink="/detalle/producto">
+      <mat-card class="example-card">
+        <img mat-card-image src="../../../assets/images/{{ producto.img }}" alt="Photo of a Shiba Inu">
+        <mat-card-header>
+          <mat-card-title>{{ producto.name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            <del> Precio: {{ producto.price }}</del> <b> →</b> Descripcion: {{ producto.description }} 
+          </p>
+          <p>
+            {{ producto.gender}} 
+          </p>
+        </mat-card-content>
+      
+      </mat-card>
+    </mat-grid-tile>
+  
+  </mat-grid-list>
+  
+  
+</div>
+</mat-sidenav-container>

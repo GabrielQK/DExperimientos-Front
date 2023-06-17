@@ -1,0 +1,54 @@
+<mat-sidenav-container>
+    <app-navbar-admin></app-navbar-admin>
+    
+  <div class="content mat-elevation-z8">
+
+
+  <mat-form-field appearance="fill">
+      <mat-label>Tiendas</mat-label>
+      <mat-select [(ngModel)]="selectedCategoria" name="categoria" (ngModelChange)="filtrarCategorias()">
+        <mat-option value="ropa">
+          Ropa
+        </mat-option>
+        <mat-option value="calzado">
+          Calzado
+        </mat-option>
+        <mat-option value="deportes">
+          Deportes
+        </mat-option>
+        <mat-option value="todos">
+          Todos
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div>
+        <button class="ButtonAgregar" routerLink="/admin/add/store" mat-raised-button color="Primary">Agregar</button>
+    </div> 
+
+    <mat-grid-list cols="3">
+      <mat-grid-tile *ngFor="let tienda of newTiendaView" class="grid-card" >
+        <a  style="text-decoration: none;"><mat-card class="example-card">
+          <img routerLink="/admin/producto" mat-card-image src="../../../assets/images/{{ tienda.img }}" alt="Photo of a Shiba Inu" style="cursor:pointer">
+          <mat-card-header>
+            <mat-card-title>{{ tienda.name }} </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              {{ tienda.horario }}
+            
+            </p>
+            <p>
+              {{ tienda.ubicacion }}
+              <a style="cursor:pointer" (click)="deleteTienda(tienda.id)"> 
+                <mat-icon class="delete">delete</mat-icon> 
+              </a>
+        
+                
+            </p>
+          </mat-card-content>
+        </mat-card></a>
+      </mat-grid-tile>
+    
+    </mat-grid-list>
+  </div>
+  </mat-sidenav-container>

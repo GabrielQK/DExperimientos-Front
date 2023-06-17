@@ -1,0 +1,225 @@
+{
+  "malls": [
+    {
+      "id": 1,
+      "nombre": "Larcomar",
+      "direccion": "Malecon de la Reserva 610, Miraflores 15074",
+      "ciudad": "Miraflores",
+      "img": "larcomar.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Plaza San Miguel",
+      "direccion": "Lima 32, San Miguel 15088",
+      "ciudad": "San Miguel",
+      "img": "plaza_san_miguel.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Mall del Sur",
+      "direccion": "Avenida Los Lirios 310, San Juan de Miraflores 15801",
+      "ciudad": "San Juan de Miraflores",
+      "img": "mall_del_sur.webp"
+    },
+    {
+      "id": 4,
+      "nombre": "Plaza Norte",
+      "direccion": "Av. Tomas Valle, Independencia 15311",
+      "ciudad": "Independencia",
+      "img": "plaza_norte.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Jockey Plaza",
+      "direccion": "Psje. Ontario, Santiago de Surco 15023",
+      "ciudad": "Santiago de Surco",
+      "img": "jockey_plaza.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Mega Plaza",
+      "direccion": "Av. Alfredo Mendiola 3698, Independencia 15311",
+      "ciudad": "Independencia",
+      "img": "mega_plaza.jpg"
+    }
+  ],
+  "tiendas": [
+    {
+      "id": 1,
+      "name": "Skechers",
+      "category": "calzado",
+      "horario": "10am - 10pm",
+      "ubicacion": "Piso 1",
+      "img": "skechers.png" 
+    },
+    {
+      "id": 2,
+      "name": "H&M",
+      "category": "ropa",
+      "horario": "10am - 10pm",
+      "ubicacion": "Piso 2",
+      "img": "hym.jpeg"      
+    },
+    {
+      "id": 3,
+      "name": "Nike",
+      "category": "deportes",
+      "horario": "10am - 10pm",
+      "ubicacion": "Piso 1",
+      "img": "nike.webp"
+    },
+    {
+      "id": 4,
+      "name": "Marathon",
+      "category": "deportes",
+      "horario": "10am - 10pm",
+      "ubicacion": "Piso 3",
+      "img": "marathon.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Bata",
+      "category": "calzado",
+      "horario": "10am - 10pm",
+      "ubicacion": "Piso 2",
+      "img": "Bata.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Saga Falabella",
+      "category": "ropa",
+      "horario": "10am - 10pm",
+      "ubicacion": "Piso 3",
+      "img": "saga.jpg"
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "name": "admin1",
+      "password": "soyadmin1"
+    },
+    {
+      "id": 2,
+      "name": "admin2",
+      "password": "soyadmin2"
+    }
+  ],
+  "promociones": [
+    {
+      "id": 1,
+      "ntienda": "Larcomar",
+      "nombreproducto": "Zapatillas Fluidflow 2.0",
+      "generoproducto": "Mujer",
+      "precio_s_desc": "S/. 289",
+      "precio_c_desc": "S/. 231.20",
+      "img": "ZpatillaFluidflow.png"
+    },
+    {
+      "id": 2,
+      "ntienda": "Larcomar",
+      "nombreproducto": "Zapatillas ultra 4D",
+      "generoproducto": "Hombre",
+      "precio_s_desc": "S/. 899",
+      "precio_c_desc": "S/. 719.20",
+      "img": "Zpatilla4D.png"
+    },
+    {
+      "id": 3,
+      "ntienda": "Larcomar",
+      "nombreproducto": "Zapatillas Solarglide 5",
+      "generoproducto": "Mujer",
+      "precio_s_desc": "S/. 499",
+      "precio_c_desc": "S/. 399.20",
+      "img": "ZpatillaSolarg.png"
+    },
+    {
+      "id": 4,
+      "ntienda": "Larcomar",
+      "nombreproducto": "Zapatillas Energyfalcon",
+      "generoproducto": "Hombre",
+      "precio_s_desc": "S/. 299",
+      "precio_c_desc": "S/. 223.20",
+      "img": "ZpatillaEnergy.png"
+    },
+    {
+      "id": 5,
+      "ntienda": "Larcomar",
+      "nombreproducto": "Zapatillas Nmd_R1",
+      "generoproducto": "Mujer",
+      "precio_s_desc": "S/. 499",
+      "precio_c_desc": "S/. 399.20",
+      "img": "ZpatillaNdm.png"
+    },
+    {
+      "id": 6,
+      "ntienda": "Larcomar",
+      "nombreproducto": "Zapatillas de Mountain Bike Five Ten Impact Pro",
+      "generoproducto": "Hombre",
+      "precio_s_desc": "S/. 649",
+      "precio_c_desc": "S/. 454.30",
+      "img": "ZpatillaMountain.png"
+    }
+  ],
+  "sugerencias": [
+    {
+      "id": 1,
+      "nsugerencia": "Luis Becerra",
+      "contenido": "Excelente lugar para tomarse fotos y es muy seguro para correr y caminar. Se recomienda ir en un día soleado para sacar mejores tomas. Muy recomendado para fotos y comer frente a una excelente vista. Además por el lugar alquilan bicicletas. Pero si caminas por negocios locales alquilan las bicicletas a un precio mucho menor.",
+      "datesugerencia": "10 de febrero"
+    },
+    {
+      "id": 2,
+      "nsugerencia": "Luis Becerra",
+      "contenido": "Excelente lugar para tomarse fotos y es muy seguro para correr y caminar. Se recomienda ir en un día soleado para sacar mejores tomas. Muy recomendado para fotos y comer frente a una excelente vista. Además por el lugar alquilan bicicletas. Pero si caminas por negocios locales alquilan las bicicletas a un precio mucho menor.",
+      "datesugerencia": "10 de febrero"
+    },
+    {
+      "id": 3,
+      "nsugerencia": "Nicolle Sanchez",
+      "contenido": "Excelente lugar para tomarse fotos y es muy seguro para correr y caminar. Se recomienda ir en un día soleado para sacar mejores tomas. Muy recomendado para fotos y comer frente a una excelente vista. Además por el lugar alquilan bicicletas. Pero si caminas por negocios locales alquilan las bicicletas a un precio mucho menor.",
+      "datesugerencia": "10 de febrero"
+    },
+    {
+      "id": 4,
+      "nsugerencia": "Jake Peralta",
+      "contenido": "Excelente lugar para tomarse fotos y es muy seguro para correr y caminar. Se recomienda ir en un día soleado para sacar mejores tomas. Muy recomendado para fotos y comer frente a una excelente vista. Además por el lugar alquilan bicicletas. Pero si caminas por negocios locales alquilan las bicicletas a un precio mucho menor.",
+      "datesugerencia": "10 de febrero"
+    },
+    {
+      "id": 5,
+      "nsugerencia": "Luis",
+      "contenido": "aa"
+    },
+    {
+      "id": 6,
+      "nsugerencia": "Gabriel",
+      "contenido": "jcdnkjcnsk"
+    },
+    {
+      "id": 7,
+      "nsugerencia": "Pipo",
+      "contenido": "holi"
+    }
+  ],
+  "novedades":[
+    {
+      "id": 1,
+      "text": "Este viernes se presenta un grupo de rock en el patio de comidas",
+      "date_on": "19-02",
+      "date_of": "19-14"
+    },
+    {
+      "id": 2,
+      "text": "Por tu compra con un monto de 100 soles en cualquiera de nuestras tiendas participa en la ruleta de preguntas y gana premios",
+      "date_on": "19-02",
+      "date_of": "19-14"
+    },
+    {
+      "id": 3,
+      "text": "Este sabado por feria Smart Fit no abrira sus puertas",
+      "date_on": "19-02",
+      "date_of": "19-14"
+    }
+  ]
+}

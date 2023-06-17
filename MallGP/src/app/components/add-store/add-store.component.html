@@ -1,0 +1,67 @@
+<mat-sidenav-container> 
+    <app-navbar-admin> </app-navbar-admin> 
+ <div class="content mat-elevation-z8">
+ <h1 class="Title">Tienda </h1>
+ 
+ <div class="Container">
+     <form [formGroup]="myForm" autocomplete="off">
+  
+ 
+            <p>
+            <mat-form-field appearance="legacy" class="Filter">
+                <mat-label style="color:black">Name</mat-label>
+                <input matInput formControlName="name" placeholder="Nombre de tienda">
+              </mat-form-field>
+            </p>
+             
+             <div *ngIf="myForm.get('name')?.hasError('required') && myForm.get('nsugerencia')?.touched">
+               <span style="color: red">Obligatorio</span>
+             </div>   
+ 
+             <p>
+                 <mat-form-field appearance="legacy" class="Filter">
+                     <mat-label style="color:black">Category</mat-label>
+                     <input matInput formControlName="category" placeholder="Category">
+                   </mat-form-field>
+             </p>
+ 
+             <div *ngIf="myForm.get('category')?.hasError('required') && myForm.get('category')?.touched">
+                 <span style="color: red">Obligatorio</span>
+             </div> 
+
+             <p>
+                <mat-form-field appearance="legacy" class="Filter">
+                    <mat-label style="color:black">Horario</mat-label>
+                    <input matInput formControlName="horario" placeholder="Horario">
+                  </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="legacy" class="Filter">
+                    <mat-label style="color:black">Ubicacion</mat-label>
+                    <input matInput formControlName="ubicacion" placeholder="Ubicacion">
+                  </mat-form-field>
+            </p>
+            
+            <p>
+                <mat-form-field appearance="legacy" class="Filter">
+                    <mat-label style="color:black">Imagen</mat-label>
+                    <input matInput formControlName="img" placeholder="Img">
+                  </mat-form-field>
+            </p>
+             
+             <div> 
+                 <button  routerLink="/admin/store" mat-raised-button color="Primary" 
+                      type="button"(click)="saveTienda()">Grabar</button>
+ 
+                 <button  routerLink="/admin/store" mat-raised-button color="Secundary">Cancelar</button>
+             </div>
+ 
+     </form>
+ 
+ </div>
+ 
+ </div>
+ 
+ </mat-sidenav-container>
+

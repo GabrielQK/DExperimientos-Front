@@ -1,0 +1,39 @@
+mat-card{
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-color: #EFC82C;
+}
+
+.container img{
+    width: 50%;
+    border-radius: 100%;
+}
+
+.login{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+}
+
+.width{
+    width:80%;
+}
+
+.button{
+    height: 50px;
+    background-color: #FF751F;
+}
+
+.spinner{
+    margin: 0 auto;
+}
+

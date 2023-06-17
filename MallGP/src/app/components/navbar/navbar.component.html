@@ -1,0 +1,67 @@
+<!--
+<mat-toolbar class="mat-elevation-z8">
+    <button
+      mat-icon-button
+      *ngIf="sidenav.mode === 'over'"
+      (click)="sidenav.toggle()"
+    >
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+    MallGP
+  </mat-toolbar>
+-->
+
+ 
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+      <img
+        class="avatar mat-elevation-z8"
+        src="../assets/logo.PNG"
+      />
+
+      <mat-divider></mat-divider>
+
+      <button mat-button class="menu-button" routerLink="/home">
+        <mat-icon class="color-mat-icon">home</mat-icon>
+        <span>Página Principal</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/aforo">
+        <mat-icon class="color-mat-icon">person</mat-icon>
+        <span>Aforo</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/promociones">
+        <mat-icon class="color-mat-icon">money</mat-icon>
+        <span>Promociones</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/maps-mall">
+        <mat-icon class="color-mat-icon">maps</mat-icon>
+        <span>Maps Mall</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/novedades">
+        <mat-icon class="color-mat-icon">flash_on</mat-icon>
+        <span>Novedades</span>
+      </button>
+
+      <mat-divider></mat-divider>
+      <button mat-button class="menu-button" routerLink="/sugerencias">
+        <mat-icon class="color-mat-icon">chat</mat-icon>
+        <span>Sugerencias</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/help-mall">
+        <mat-icon class="color-mat-icon">help</mat-icon>
+        <span>Help</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/login">
+        <mat-icon class="color-mat-icon">power_settings_new</mat-icon>
+        <span>Salir</span>
+      </button>
+  
+      
+    </mat-sidenav>
+    <!--
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+    -->

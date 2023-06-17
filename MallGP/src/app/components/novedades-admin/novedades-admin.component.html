@@ -1,0 +1,21 @@
+<mat-sidenav-container> 
+    <app-navbar-admin> </app-navbar-admin>
+<div class="content mat-elevation-z8"> 
+<p class="title-novedades-section">Novedades</p>
+<div style="margin-top: 30px; margin-bottom:20px; margin-left: 10px;">
+    <button class="ButtonAgregar" routerLink="/admin/add/new" mat-raised-button color="Primary">Agregar</button>
+</div> 
+<mat-grid-list cols="3" class="card-padre">
+    <mat-card class="novedad-card" *ngFor="let novedad of NovedadesView">
+        <mat-card-content>
+            <p>
+                {{novedad.text}}
+                <a style="cursor:pointer" (click)="deleteNovedad(novedad.id)"> 
+                    <mat-icon class="delete">delete</mat-icon> 
+                  </a>
+            </p>
+        </mat-card-content>
+    </mat-card>
+</mat-grid-list>
+</div>
+</mat-sidenav-container>

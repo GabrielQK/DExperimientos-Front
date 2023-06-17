@@ -1,0 +1,76 @@
+<mat-sidenav-container> 
+    <app-navbar-admin> </app-navbar-admin> 
+ <div class="content mat-elevation-z8">
+ <h1 class="Title">Tienda </h1>
+ 
+ <div class="Container">
+     <form [formGroup]="myForm" autocomplete="off">
+  
+ 
+            <p>
+            <mat-form-field appearance="legacy" class="Filter">
+                <mat-label style="color:black">Name</mat-label>
+                <input matInput formControlName="name" placeholder="Nombre producto">
+              </mat-form-field>
+            </p>
+             
+             
+ 
+             <p>
+                 <mat-form-field appearance="legacy" class="Filter">
+                     <mat-label style="color:black">Category</mat-label>
+                     <input matInput formControlName="category" placeholder="Category">
+                   </mat-form-field>
+             </p>
+ 
+             
+
+             <p>
+                <mat-form-field appearance="legacy" class="Filter">
+                    <mat-label style="color:black">Description</mat-label>
+                    <input matInput formControlName="descripcion" placeholder="Description">
+                  </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="legacy" class="Filter">
+                    <mat-label style="color:black">Price</mat-label>
+                    <input matInput formControlName="price" placeholder="Price">
+                  </mat-form-field>
+            </p>
+
+            <p>
+
+                <mat-form-field appearance="legacy">
+                    <mat-label>Gender</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Hombre</mat-option>
+                      <mat-option value="two">Mujer</mat-option>
+                      <mat-option value="trhee">Unisex</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+            </p>
+            
+            <p>
+                <mat-form-field appearance="legacy" class="Filter">
+                    <mat-label style="color:black">Imagen</mat-label>
+                    <input matInput formControlName="img" placeholder="Img">
+                  </mat-form-field>
+            </p>
+             
+             <div> 
+                 <button  routerLink="/admin/producto"mat-raised-button color="Primary" 
+                      type="button"(click)="saveProduct()">Grabar</button>
+ 
+                 <button  routerLink="/admin/producto" mat-raised-button color="Secundary">Cancelar</button>
+             </div>
+ 
+     </form>
+ 
+ </div>
+ 
+ </div>
+ 
+ </mat-sidenav-container>
+

@@ -1,0 +1,50 @@
+<mat-sidenav-container> 
+    <app-navbar-admin> </app-navbar-admin> 
+ <div class="content mat-elevation-z8">
+ <h1 class="Title">Novedades </h1>
+ 
+ <div class="Container">
+     <form [formGroup]="myForm" autocomplete="off">
+  
+ 
+            <p>
+            <mat-form-field appearance="legacy" class="Filter">
+                <mat-label style="color:black">Text</mat-label>
+                <input matInput formControlName="text" placeholder="text">
+              </mat-form-field>
+            </p>
+             
+             
+ 
+             <p>
+                 <mat-form-field appearance="legacy" class="Filter">
+                     <mat-label style="color:black">Date_on</mat-label>
+                     <input matInput formControlName="date_on" placeholder="date_on">
+                   </mat-form-field>
+             </p>
+ 
+             
+
+             <p>
+                <mat-form-field appearance="legacy" class="Filter">
+                    <mat-label style="color:black">Date_of</mat-label>
+                    <input matInput formControlName="date_of" placeholder="date_of">
+                  </mat-form-field>
+            </p>
+
+
+             
+             <div> 
+                 <button  routerLink="/admin/novedades"mat-raised-button color="Primary" 
+                      type="button"(click)="saveNew()">Grabar</button>
+ 
+                 <button  routerLink="/admin/novedades" mat-raised-button color="Secundary">Cancelar</button>
+             </div>
+ 
+     </form>
+ 
+ </div>
+ 
+ </div>
+ 
+ </mat-sidenav-container>

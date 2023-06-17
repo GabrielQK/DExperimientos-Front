@@ -1,0 +1,54 @@
+<mat-sidenav-container> 
+    <app-navbar-admin> </app-navbar-admin>
+<div class="content mat-elevation-z8"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<div>
+  
+  <div>
+      <h1 class="Title">Sugerencia De Actividades</h1>
+  </div>
+
+
+</div>
+
+<mat-grid-list cols="3"> 
+  <mat-grid-tile *ngFor="let sugerencias of SugerenciaView" class="grid-card"> 
+  <mat-card class="example-card">
+    <mat-card-title>{{sugerencias.nsugerencia}}</mat-card-title>
+    <mat-card-content>
+      <p>{{ sugerencias.contenido }}
+        
+      </p>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    
+    <mat-card-actions class="container">
+
+      <div class="star-widget">
+
+        <button mat-button>
+          
+        </button>
+        <span class="example-spacer"></span>
+        
+        <a style="cursor:pointer" (click)="deleteSugerencia(sugerencias.id)"> 
+            <mat-icon class="delete">delete</mat-icon> 
+          </a>
+
+      </div>
+      
+    </mat-card-actions>
+    
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+
+  </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+</div>
+</mat-sidenav-container>
+
+

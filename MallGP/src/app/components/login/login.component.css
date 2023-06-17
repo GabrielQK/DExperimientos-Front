@@ -1,0 +1,45 @@
+
+.container1{
+    background-color: #EFC82C;
+    padding: 20px;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+}
+mat-card{
+    margin: auto;
+    margin-top: 15%;
+    width: 45%;
+    background-color: #FF751F;
+    border-radius: 25px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.btn{
+    width: 50%;
+    margin: auto;
+    
+}
+
+button{
+    margin-top:5%;
+    margin-left: 20px;
+}
+
+.client{
+    margin-right: 20px;
+    background-color: #FF751F;
+    color: white;
+}
+
+button:hover{
+    color:#EFC82C;
+}
+
+

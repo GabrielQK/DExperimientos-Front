@@ -1,0 +1,30 @@
+.content {
+    height: calc(100vh - 130px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 243px;
+  
+    padding: 16px;
+  
+    overflow: auto;
+  }
+  
+  mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+
+  .accordion{
+    width: 1000px;
+     padding: 2px;
+     margin: 5px;
+    
+ }
+ 
+ .tittle{
+ 
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: medium;
+     font-weight: bold;
+     padding: 5px;
+ }
+ 

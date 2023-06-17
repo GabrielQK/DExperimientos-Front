@@ -1,0 +1,42 @@
+.content {
+    height: calc(100vh - 130px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 500px;
+    
+    padding: 16px;
+    
+    overflow: auto;
+  }
+  
+  mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+
+button{
+    padding: auto;
+    margin:2px;
+}
+
+.Title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.label{
+    color: black;
+}
+
+.Container{
+    padding: 35px;
+    
+    background-color: rgb(236, 240, 241);
+    margin-block: 5px;
+    border-radius: 50px;
+    border-color: black;
+}

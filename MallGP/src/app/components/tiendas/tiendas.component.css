@@ -1,0 +1,31 @@
+.content {
+    height: calc(100vh - 130px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 243px;
+  
+    padding: 16px;
+  
+    overflow: auto;
+  }
+  
+  mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+
+.example-card {
+    min-height: 320px;
+    margin: 100px 0.5rem;
+    background-color: #F2F6FA;
+    margin-top: 50px;
+  }
+  
+  .example-card img {
+    min-height: 230px;
+  }
+  
+  .grid-card {
+    margin-top: 50px;
+  }
+  
+  
